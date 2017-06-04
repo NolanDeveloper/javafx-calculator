@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="300.0" prefWidth="200.0" stylesheets="@../styles/main.css" vgap="7.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nolan.calculator.MainController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" percentWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" percentWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints percentHeight="11.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+    <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+      <RowConstraints percentHeight="17.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="lblHelper" alignment="BOTTOM_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="helper" text="2 +" GridPane.columnSpan="4" GridPane.halignment="RIGHT">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding></Label>
+      <Label fx:id="lblMain" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="main" text="2" GridPane.columnSpan="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </Label>
+      <Button fx:id="btnSeven" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="7" textOverrun="CLIP" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnEight" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="8" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnNine" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="9" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnAdd" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOperation" text="+" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnFour" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="4" textOverrun="CLIP" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnFive" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="5" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnSix" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="6" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnOne" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="1" textOverrun="CLIP" GridPane.rowIndex="5">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnTwo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="2" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnThree" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="3" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnZero" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onNumber" text="0" textOverrun="CLIP" GridPane.columnSpan="2" GridPane.rowIndex="6">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnDot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDot" text="." textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnEquals" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEquals" text="=" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnClean" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onClean" text="С" textOverrun="CLIP" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnDivide" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOperation" text="/" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnMultiply" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOperation" text="*" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+      <Button fx:id="btnSubtract" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onOperation" text="-" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>
